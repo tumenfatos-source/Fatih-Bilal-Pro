@@ -6,9 +6,9 @@ FINALPACKAGE = 1
 
 include $(THEOS)/makefiles/common.mk
 
-TWEAK_NAME = Fatih-Bilal-Pro
+TWEAK_NAME = FatihProject
 
-Fatih-Bilal-Pro_FILES = Tweak.x
-Fatih-Bilal-Pro_CFLAGS = -fobjc-arc
+FatihProject_FILES = Tweak.x
+FatihProject_CFLAGS = -fobjc-arc
 
 include $(THEOS_MAKE_PATH)/tweak.mk
