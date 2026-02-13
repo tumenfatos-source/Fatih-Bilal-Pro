@@ -1,4 +1,4 @@
-name: Fatih-Garantili-V5
+name: Fatih-Final-Fix
 on: [push, workflow_dispatch]
 
 jobs:
@@ -28,3 +28,4 @@ jobs:
         with:
           name: Fatih-Hile-Dosyasi
           path: .theos/obj/debug/*.dylib
+        
