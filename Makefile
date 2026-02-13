@@ -1,4 +1,4 @@
-TARGET := iphone:clang:latest:15.0
+TARGET := iphone:clang:latest:14.0
 ARCHS = arm64 arm64e
 
 DEBUG = 0
@@ -6,9 +6,9 @@ FINALPACKAGE = 1
 
 include $(THEOS)/makefiles/common.mk
 
-TWEAK_NAME = FatihProject
+TWEAK_NAME = FatihHile
 
-FatihProject_FILES = Tweak.x
-FatihProject_CFLAGS = -fobjc-arc
+FatihHile_FILES = Tweak.x
+FatihHile_CFLAGS = -fobjc-arc
 
 include $(THEOS_MAKE_PATH)/tweak.mk
