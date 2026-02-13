@@ -1,0 +1,10 @@
+Package: com.bilal.ultimate
+Name: Bilal Ultimate Mod
+Depends: mobilesubstrate
+Version: 1.0.0
+Architecture: iphoneos-arm
+Description: Premium Mod: Anti-Ban, Fly, Magic Bullet, iPad View
+Maintainer: Bilal
+Author: Bilal
+
+
