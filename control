@@ -1,8 +1,9 @@
-Package: com.fatih.ultimate
+Package: com.fatih.prohack
 Name: Fatih-New-Hack
 Depends: mobilesubstrate
-Version: 1.0.0
+Version: 1.0
 Architecture: iphoneos-arm
-Description: Premium Mod: Anti-Ban, Fly, Magic Bullet, iPad View
-Maintainer: Bilal
-Author: Bilal
+Description: Fatih PUBG Mobile Hack
+Maintainer: Fatih
+Author: Fatih
+Section: Tweaks
