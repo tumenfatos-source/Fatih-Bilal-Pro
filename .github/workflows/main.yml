@@ -1,4 +1,4 @@
-name: Fatih-Final-Fix
+name: Fatih-Garantili-V5
 on: [push, workflow_dispatch]
 
 jobs:
