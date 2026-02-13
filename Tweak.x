@@ -2,8 +2,9 @@
 #import <substrate.h>
 
 // --- SECURITY BYPASS ---
-void (*orig_SecurityNotify)(void *instance);
+void (*Orig_SecurityNotify)(void *instance);
 void hook_SecurityNotify(void *instance) {
+    // Anti-ban active: blocking security reports
     return;
 }
 
@@ -13,15 +14,17 @@ float hook_Recoil(void *instance) { return 0.0f; }
 float hook_B_Speed(void *instance) { return 9999.0f; }
 float hook_V_Gravity(void *instance) { return -750.0f; }
 float hook_H_Gravity(void *instance) { return -1.5f; }
-float hook_W_Scale(void *instance) { return 4.0f; }
+float hook_M_Scale(void *instance) { return 4.0f; }
 
 // --- INITIALIZATION ---
 %ctor {
-    MSHookFunction((void *)0x42A1B2C3, (void *)hook_SecurityNotify, (void **)&orig_SecurityNotify);
+    // Anti-Ban & Security Hook
+    MSHookFunction((void *)0x42A1B2C3, (void *)hook_SecurityNotify, (void **)&Orig_SecurityNotify);
+    
+    // Cheat Hooks
     MSHookFunction((void *)0x42B2C3D4, (void *)hook_GetFOV, NULL);
     MSHookFunction((void *)0x42C3D4E5, (void *)hook_Recoil, NULL);
     MSHookFunction((void *)0x42D4E5F6, (void *)hook_V_Gravity, NULL);
     
-    NSLog(@"[Bilal_v4.2] Status: Active | Anti-Ban: Secured");
+    NSLog(@"[Fatih-Project] Status: Active | Anti-Ban: Secured");
 }
-
